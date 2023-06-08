@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: hsl(218, 23%, 16%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.advice-card {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 19%, 24%);
+    width: 100%;
+    margin: 0 20px;
+    max-width: 500px;
+    border-radius: 30px;
+    position: relative;
+    padding: 40px 30px;
+}
+
+
+.advice-title{
+    color: hsl(150, 100%, 66%);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.advice-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.advice-content p{
+    margin: 0;
+    line-height: normal;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 145%;
+    letter-spacing: 1px;
+    color: hsl(193, 38%, 86%);
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    margin-bottom: 40px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divider img{
+    width: 100%;
+}
+
+
+
+.desktop-divider {
+    display: none;
+}
+
+.mobile-divider {
+    display: flex;
+}
+
+.advice-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color:  hsl(150, 100%, 66%);
+    width: 55px;
+    bottom: -25px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 55px;
+
+}
+
+
+@media(min-width:992px) {
+    .desktop-divider {
+        display: flex;
+    }
+
+    .mobile-divider {
+        display: none;
+    }
+}
